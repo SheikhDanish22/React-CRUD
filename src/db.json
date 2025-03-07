@@ -35,5 +35,28 @@
       "Company_Name": "eef",
       "MNF": "2004"
     }
+  ],
+  "User": [
+    {
+      "name": "Ram Maheshwari",
+      "email": "ram123@gmail.com",
+      "number": 8269665678,
+      "password": "R123",
+      "id": "8d4d"
+    },
+    {
+      "id": "f903",
+      "name": "Danish",
+      "email": "d123@gmail.com",
+      "number": "5478963214",
+      "password": "d123"
+    },
+    {
+      "id": "de9f",
+      "name": "Danish",
+      "email": "danish1521@gmail.com",
+      "number": "7803830300",
+      "password": "1234"
+    }
   ]
 }

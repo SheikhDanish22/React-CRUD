@@ -22,7 +22,7 @@ const Login = () => {
     }
 
     try {
-      const api = `http://localhost:3000/user/?email=${input.email}&password=${input.password}`;
+      const api = `http://localhost:3000/User/?email=${input.email}&password=${input.password}`;
       const res = await axios.get(api);
 
       if (res.data.length === 0) {
@@ -30,6 +30,7 @@ const Login = () => {
       } else {
         message.success("Login Successful");
         localStorage.setItem("name", res.data[0].name);
+        localStorage.setItem("email", res.data[0].email);
         navigate("/home");
       }
     } catch (error) {

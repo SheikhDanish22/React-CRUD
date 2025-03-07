@@ -73,8 +73,8 @@ const ans=mydata.map((key)=>{
           <th> Price</th>
           <th>Company Name</th>
           <th>MNF Date</th>
-          <th></th>
-          <th></th>
+          <th>Edit</th>
+          <th>Delete</th>
         </tr>
       </thead>
       <tbody>

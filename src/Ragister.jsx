@@ -22,8 +22,8 @@ const Registration = () => {
    }
  
    const handleSubmit=()=>{
-     let api="http://localhost:3000/user";
-     axios.get(api,input).then((res)=>{
+     let api="http://localhost:3000/User";
+     axios.post(api,input).then((res)=>{
        message.success("data inserted");
        console.log(input)
        navigator("/Login")

@@ -1,4 +1,3 @@
-
 // import { Link,Outlet } from "react-router-dom";
 //           < Outlet style={{justifyContent:"center",alignItems:"center"}}/>
 // const Layout = () => {
@@ -48,9 +47,17 @@ import { SiSimplelogin } from "react-icons/si";
 import { MdOutlineManageAccounts } from "react-icons/md";
 
 
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
+import { message } from "antd";
 < Outlet style={{ justifyContent: "center", alignItems: "center" }} />
 const Layout = () => {
+    const navigate=useNavigate();
+    const logout=()=>{
+        message.success("Logout Successfully");
+        localStorage.clear();
+        navigate("/login");
+
+    }
     return (
         <>
              
@@ -75,7 +82,7 @@ const Layout = () => {
                          <FcDoNotInsert />Insert</Link></li>
                          <li><Link to="display">Display</Link></li>
                          <li><Link to="update">Update</Link></li>
-                         <li><Link to="login">Login</Link></li>
+                         <li><Link onClick={logout} >LogOut</Link></li>
                          {/* <li><Link to="ragister">Ragister</Link></li> */}
                                           
                 </ul>
