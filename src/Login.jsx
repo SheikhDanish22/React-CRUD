@@ -84,6 +84,8 @@ const Login = () => {
             Login
           </Button>
         </Form>
+        <br />
+        <h6 onClick={()=>{navigate("/Ragister")}}>Create new account :<span style={{cursor:"pointer",textDecoration:"underline",color:"blue"}}>Register</span></h6>
       </div>
     </div>
   );

@@ -17,6 +17,7 @@ return (
               <Routes>
                 <Route index element={<Login/>}></Route>
                 <Route path="login" element={<Login/>}></Route>
+                <Route path="ragister" element={<Ragister/>} />
 
                   <Route path="/" element={<Layout/>}>
                   {/* <Route index element={<Home/>}/> */}
@@ -27,8 +28,8 @@ return (
                   <Route path="search" element={<Search/>}/>
                   <Route path="edit/:id" element={<Edit/>} />
                   <Route path="edit/:Price" element={<Edit/>} />
-                  <Route path="login" element={<Login/>} />
-                  <Route path="ragister" element={<Ragister/>} />
+                  
+                  
                   
                  
                   

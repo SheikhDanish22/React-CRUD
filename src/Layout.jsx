@@ -70,14 +70,13 @@ const Layout = () => {
                 <div className="logo"><img src="/src/image/logo2.jpg" alt="" /> </div>
              <div className="Menu">
                 <ul>
-                        <li><Link to="home"><FcHome /><a href="#">
-                        </a>Home</Link></li>
+                        <li><Link to="home"><FcHome />Home</Link></li>
                          <li><Link to="insert">
-                         <FcDoNotInsert /><a href="#"></a>Insert</Link></li>
-                         <li><Link to="display"><a href="#"><FaDisplay /></a>Display</Link></li>
-                         <li><Link to="update"><a href="#"><RxUpdate /></a>Update</Link></li>
-                         <li><Link to="login"><a href="#"><SiSimplelogin /> </a>Login</Link></li>
-                         <li><Link to="ragister"><a href="#"><MdOutlineManageAccounts /></a>Ragister</Link></li>
+                         <FcDoNotInsert />Insert</Link></li>
+                         <li><Link to="display">Display</Link></li>
+                         <li><Link to="update">Update</Link></li>
+                         <li><Link to="login">Login</Link></li>
+                         {/* <li><Link to="ragister">Ragister</Link></li> */}
                                           
                 </ul>
                 

@@ -24,7 +24,7 @@ useEffect(()=>{
 const myDel=(id)=>{
     let api=`http://localhost:3000/Medical/${id}`;
     axios.delete(api).then((res)=>{
-        message.error("Record Sjuccesfully deleted!");
+        message.error("Record Succesfully deleted!");
         loadData();
     })   
     

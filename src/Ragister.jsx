@@ -61,6 +61,8 @@ const Registration = () => {
           </Form.Group>
           <Button variant="dark" style={{ width: '100%' }} onClick={handleSubmit}>Register</Button>
         </Form>
+        <br/>
+        <h6 onClick={()=>{navigator("/Login")}}>Alredy Account :<span style={{cursor:"pointer",textDecoration:"underline",color:"blue"}}>Login</span></h6>
       </div>
     </div>
   );
